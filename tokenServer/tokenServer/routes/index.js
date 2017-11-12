@@ -51,7 +51,6 @@ router.get('/', function(req, res, next) {
       }
   })
   .then(function(response) {
-    var test = { "test":"mytest"};
     res.send(response);
   })
   .catch(function(err) {
