@@ -6,12 +6,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Eats by the 'L'</title>
         <meta name="description" content="">
         <!-- original -->
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
         <!-- from esri -->
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<!--         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"> -->
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
@@ -19,9 +20,9 @@
                 padding-top: 50px;
             }
         </style>
-
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" type="image/png" href="img//favicon/favicon-32x32.png" sizes="32x32" />
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
@@ -42,34 +43,41 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#"><img src="img/eats_logo.svg"></a>
         </div>
+        <div class="desc"><p>Discover great restaurants near CTA rail stations</p></div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="pick a line" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="pick a station" class="form-control">
-            </div>
 
-          </form>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
 
-    <div class="container results">
-      <!-- Example row of columns -->
+    <div class="container content">
       <div> <!-- bootstrap: class="row" -->
-        <div class="col-md-8 mapWindow"> 
+        <div class="col-md-9 mapWindow"> 
           <div id="viewDiv"></div>
         </div>
-        <div class="col-md-4 panel">
-          <h2>Results</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+
+        <div class="col-md-3 panel">
+
+          <ul class="list-group lineList">
+            <li class="list-group-item inst">Select a Line</li>
+            <li class="list-group-item" id="Blue"><span class="esri-icon-right-triangle-arrow" aria-label="expand icon"></span>Blue</li>
+            <li class="list-group-item" id="Brown"><span class="esri-icon-right-triangle-arrow" aria-label="expand icon"></span>Brown</li>
+            <li class="list-group-item" id="Green"><span class="esri-icon-right-triangle-arrow" aria-label="expand icon"></span>Green</li>
+            <li class="list-group-item" id="Orange"><span class="esri-icon-right-triangle-arrow" aria-label="expand icon"></span>Orange</li>
+            <li class="list-group-item" id="Pink"><span class="esri-icon-right-triangle-arrow" aria-label="expand icon"></span>Pink</li>
+            <li class="list-group-item" id="Purple"><span class="esri-icon-right-triangle-arrow" aria-label="expand icon"></span>Purple</li>
+            <li class="list-group-item" id="Red"><span class="esri-icon-right-triangle-arrow" aria-label="expand icon"></span>Red</li>
+            <li class="list-group-item" id="Yellow"><span class="esri-icon-right-triangle-arrow" aria-label="expand icon"></span>Yellow</li>
+          </ul>
+          <ul class="list-group staList">
+          </ul>
         </div>
       </div>
+
+
+      
 
     </div> <!-- /container -->   
         <!-- updated jQuery path    -->  
@@ -78,6 +86,9 @@
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
-        <script src="js/main.js"></script>
+
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/stations.js"></script>
+
     </body>
 </html>
