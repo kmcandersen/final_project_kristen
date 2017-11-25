@@ -12,8 +12,8 @@ var BUSINESS_PATH = "/v3/businesses/";
 var TOKEN_PATH = "/oauth2/token";
 var GRANT_TYPE = "client_credentials";
 
-var CLIENT_ID = "yBSQxTfRYukNfg2kMSU4Sw";
-var CLIENT_SECRET = "8lGW6KoHT1V6AM4ykmLzg6l8CQwnfgW4A0RqaSCQ5tYi94Ws0nt6ULIEl0a09Gdw";
+var CLIENT_ID = "";
+var CLIENT_SECRET = "";
 
 var my_access_token;
 
