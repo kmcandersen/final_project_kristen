@@ -3,27 +3,211 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 /* * {
-	border:  1px solid red;
+	border: .5px solid red;
 } */
 
-.results {
+html, body {
+	height:  100%;
+	width:  100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	height:  100%;
+	width:  100%;
+}
+
+.navbar-brand {
+	padding-top: 8px;
+	padding-left: 15px;
+}
+
+.navbar-brand img {
+	width: 80%;
+}
+
+.desc {
+	padding-top: 20px;
+	text-align: right;
+	letter-spacing: .5px;
+	color:  white;
+}
+
+.content {
+	height:  100%;
+	width: 100%;
 	padding: 0;
 }
 
 .mapWindow {
-	height:600px;
-	padding-left:  0;
+	height:  100%;
+/* 	height: 510px;
+	overflow:  hidden; */
+	padding: 0; 
 }
 
 #viewDiv {
-padding: 0;
-margin: 0;
-height: 100%;
-width: 100%;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
 }
 
+.panel {
+	padding: 0;
+	height:  100%;
+/* 	height: 510px; */
+	overflow:  scroll; 
+}
+
+.list-group-item {
+	padding: 8px 15px;
+}
+
+.staList {
+	display: none;
+}
+
+.first {
+	color:  white;
+}
+
+.staActive {
+	background-color: #efefef;
+}
+
+
+.Blue {
+	background-color: #1AA2DB;
+}
+
+#Blue {
+	background-color: #1AA2DB;
+	color:  white;
+}
+
+#Blue:hover {
+	border-top: 3px solid #1AA2DB;
+	background-color:  #fff;
+	color: #1AA2DB;
+}
+
+.BlueType:hover {
+	color: #1AA2DB;
+}
+
+.Brown {
+	background-color: #61361E;
+}
+
+#Brown {
+	background-color: #61361E;
+	color:  white;
+}
+
+#Brown:hover {
+	border-top: 3px solid #61361E;
+	background-color: #fff;
+	color: #61361E;
+}
+
+.Green {
+	background-color: #159940;
+}
+
+#Green {
+	background-color: #159940;
+	color: white;
+}
+
+#Green:hover {
+	border-top: 3px solid #159940;
+	background-color: #fff;
+	color: #159940;
+}
+
+.Orange {
+	background-color: #F7482B;
+}
+
+#Orange {
+	background-color: #F7482B;
+	color: white;
+}
+
+#Orange:hover {
+	border-top: 3px solid #F7482B;
+	background-color: white;
+	color: #F7482B;
+}
+
+.Pink {
+	background-color: #E07FA6;
+}
+
+#Pink {
+	background-color: #E07FA6;
+	color: white;
+}
+
+#Pink:hover {
+	border-top: 3px solid #E07FA6;
+	background-color: #fff;
+	color: #E07FA6;
+
+}
+
+.Purple {
+	background-color: #522A95;
+}
+
+#Purple {
+	background-color: #522A95;
+	color: white;
+}
+
+#Purple:hover {	
+	border-top: 3px solid #522A95;
+	background-color: #fff;
+	color: #522A95;
+}
+
+.Red {
+	background-color: #C41235;
+}
+
+#Red {
+	background-color: #C41235;
+	color: white;
+}
+
+#Red:hover {
+	border-top: 3px solid #C41235;
+	background-color: #fff;
+	color: #C41235;
+}
+	
+.Yellow {
+	background-color: #F8E133;
+	color: black;
+}
+
+#Yellow {
+	background-color: #F8E133;
+	color:  black;
+}
+
+#Yellow:hover {
+	border-top: 3px solid #F8E133;
+	background-color: #fff;
+	color: black;
+}
 
 
 
